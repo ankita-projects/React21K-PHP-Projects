@@ -16,9 +16,9 @@
   <body>
       <h1>Number Counter</h1>
       <?php
-        $randomNum = rand(0,100);                // for generate a random number between 0 - 100
+        $randomNumber = rand(0,100);                // for generate a random number between 0 - 100
 
-      echo "<p>The random number is $randomNum, in Finnish it is ";
+      echo "<p>The random number is $randomNumber, in Finnish it is ";
 
       $one = "yksi";                           //english to finnish
       $two = "kaksi";
@@ -30,8 +30,8 @@
       $eight = "kahdeksan";
       $nine = "yhdeksän";
 
-      $firstDigit = $randomNum % 10;                              //for Spliting digits
-      $secondDigit = ($randomNum - ($randomNum % 10)) / 10;
+      $firstDigit = $randomNumber % 10;                              //for Spliting digits
+      $secondDigit = ($randomNumber - ($randomNumber % 10)) / 10;
                                                                         
       switch ($firstDigit) {
         case 0:
@@ -66,7 +66,7 @@
             break;
       }
 
-      if ($randomNum > 10) {
+      if ($randomNumber > 10) {
         switch ($secondDigit) {
             case 1:
                 $secondDigitString = $one;
@@ -98,20 +98,20 @@
         }
       }
 
-      if ($randomNum == 0) {                              //converting text in Finnish
+      if ($randomNumber == 0) {                              //converting text in Finnish
         echo "nolla";
-      } elseif ($randomNum == 10) {
+      } elseif ($randomNumber == 10) {
         echo "kymmenen";
-      } elseif ($randomNum == 100) {
+      } elseif ($randomNumber == 100) {
         echo "sata";
-      } elseif ($randomNum < 10) {
+      } elseif ($randomNumber < 10) {
         echo $firstDigitString;
-      } elseif ($randomNum < 20) {
+      } elseif ($randomNumber < 20) {
         echo $firstDigitString . "toista";
       } else {
         echo $secondDigitString . "kymmentä" . $firstDigitString;
       }
       ?>
-    </section>
+ 
   </body>
 </html>
