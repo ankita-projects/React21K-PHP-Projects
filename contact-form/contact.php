@@ -9,6 +9,6 @@
     $sent_status = mail('s2100131@edu.bc.fi', 'Sent from test PHP app', $message);
 
     if ($sent_status): echo 'Your message has been sent';
-    else: echo 'Oops! Something went wrong. Your message was not sent';
+    else: echo 'Something went wrong. Your message was not sent';
     endif;
 ?>
