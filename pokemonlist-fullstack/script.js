@@ -24,14 +24,14 @@ const createPage = (data) => {
     item.appendChild(anchor);
     root.appendChild(item);
   }
-  let button = document.createElement("button");
+  let button = document.createElement("button");// adding buttons for navigating pages
   button.innerHTML = "Previous";
   data.previous!='null' ?  root.appendChild(button) : (button.disabled = true);
  
   let button1 = document.createElement("button");
   button1.innerHTML = "Next";
   root.appendChild(button1);
-  button.addEventListener("click", function () {
+  button.addEventListener("click", function () {   //
     listPokemon(1);
   });
   button1.addEventListener("click", function () {
