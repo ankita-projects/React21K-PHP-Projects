@@ -1,0 +1,16 @@
+{
+    "recipes": [
+        {   
+            "id": 1,
+            "name": "omelette",
+            "ingredent": "egg cooking oil",
+            "difficulty": "easy"
+        },
+        {
+            "id": 2,
+            "name": "omelette",
+            "ingredent": "egg cooking oil",
+            "difficulty": "easy"
+        }
+    ]
+}
